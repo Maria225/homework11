@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Comparisons</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  
+<!-- Navigation bar when full screen -->
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="page1_landing.html">Home</a>
+        </li>
+        <li style="float:right">
+          <a href="page7_data.html">Data</a>
+        </li>                
+        </li>
+        <li style="float:right">
+          <a href="page6_comparisons.html">Comparisons</a>
+        </li>
+        <li style="float:right">
+            <div class="dropdown">
+                <button class="dropbtn">Plots
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="page2_visualization1.html">Temperature</a>
+                  <a href="page3_visualization2.html">Wind Speed</a>
+                  <a href="page4_visualization3.html">Cloudiness</a>
+                  <a href="page5_visualization4.html">Humidity</a>
+                </div>
+      </ul>
+<!-- Navigation bar when small screen -->     
+      <select id="nav-select">
+        <option value="page1_landing.html">Home</option>
+        <option value="page2_visualization1.html">Temperature</option>
+        <option value="page3_visualization2.html">Wind Speed</option>
+        <option value="page4_visualization3.html">Cloudiness</option>
+        <option value="page5_visualization4.html">Humididity</option>
+        <option value="page6_comparisons.html">Comparisons</option>
+        <option value="page7_data.html">Data</option>
+      </select>
+      <div class="clearfix"></div>
+    </nav>
+ <!-- Header -->   
+    <header class="header">
+      <h1>Welcome</h1>
+    </header>
+ <!-- Body -->   
+    <main>
+      <section class="posts">
+        <article class="post">
+          <h3>Latitude vs X</h3>
+          <p> In this project, weather changes vs latitude location were analyzed. </p>
+          <p> First, weather data from OpenWeatherMap API were pulled for over 500 cities. </p>
+          <p> Second, the weather changes vs latitude location were plotted into graphs using matplotlib in jupyter notebook. </p>
+          <p> The weather changes analyzed were maxiumum temperture, cloudiness, wind speed, and humidity. </p>
+          <p> This website contains the source data gathered, the visualziations created, and breif description of the trends identified.</p>
+        </article>
+        <article class="post">
+          <h3>Temperature</h3>
+          <img src="temperaturemap.png" alt="Temperature">
+        </article>
+        <article class="post">
+          <h3>Wind Speed</h3>
+          <img src="windmap.png" alt="Wind Speed">
+        </article>
+        <article class="post">
+          <h3>Cloudiness</h3>
+          <img src="cloudymap.png" alt="Cloudiness">
+        </article>
+        <article class="post">
+          <h3>Humidity</h3>
+          <img src="humiditymap.png" alt="Humidity">
+        </article>
+      </section>
+    </main>
+  </div>
+
+</body>
+
+</html>
